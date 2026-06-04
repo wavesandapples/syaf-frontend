@@ -43,6 +43,16 @@ nav ul li a {
   border-radius: 10px;
 }
 
+.logo {
+  text-align: center;
+  padding: 20px;
+}
+.logo img {
+  height: 60px;   /* neat size for top bar */
+  width: 40px;    /* keep proportions */
+}
+
+
 /* Social Media */
 .social {
   text-align: center;
@@ -59,42 +69,49 @@ nav ul li a {
   transform: scale(1.2);
 }
 
-/* Slider */
+/* Slider container */
 .slider {
-  width: 80%;
+  width: 100%;              /* take most of the screen width */
+  max-width: 700px;
+  height: 25px;        /* cap width on large screens */
   margin: 30px auto;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
+/* Slides row */
 .slides {
   display: flex;
   width: 400%;
   animation: slide 16s infinite;
 }
 
+/* Images inside slider */
 .slides img {
-  width: 100%;
+  width: 100%;             /* scale to container width */
+  height: 25px;           /* fixed height for consistency */
+  object-fit: cover;       /* crop edges nicely */
   border-radius: 10px;
 }
 
-@keyframes slide {
-  0%   { margin-left: 0; }
-  20%  { margin-left: 0; }
-  25%  { margin-left: -100%; }
-  45%  { margin-left: -100%; }
-  50%  { margin-left: -200%; }
-  70%  { margin-left: -200%; }
-  75%  { margin-left: -300%; }
-  95%  { margin-left: -300%; }
-  100% { margin-left: 0; }
+
+@media (max-width: 768px) {
+  .slides img {
+    height: 200px;   /* tablet */
+  }
+}
+
+@media (max-width: 480px) {
+  .slides img {
+    height: 150px;   /* phone */
+  }
 }
 
 
 /* Footer */
 footer {
-  background: #1e90ff; /* blue */
+  background: hotpink;
   color: white;
   text-align: center;
   padding: 10px;
@@ -105,7 +122,7 @@ footer {
   width: 50%;
   margin: 40px auto;
   padding: 20px;
-  background: rgba(255,255,255,0.9);
+  background: hotpink;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
