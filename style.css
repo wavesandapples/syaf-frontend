@@ -73,7 +73,7 @@ nav ul li a {
 .slider {
   width: 100%;              /* take most of the screen width */
   max-width: 700px;
-  height: 25px;        /* cap width on large screens */
+  height: 250px;        /* cap width on large screens */
   margin: 30px auto;
   overflow: hidden;
   border-radius: 10px;
@@ -90,7 +90,7 @@ nav ul li a {
 /* Images inside slider */
 .slides img {
   width: 100%;             /* scale to container width */
-  height: 25px;           /* fixed height for consistency */
+  height: 250px;           /* fixed height for consistency */
   object-fit: cover;       /* crop edges nicely */
   border-radius: 10px;
 }
