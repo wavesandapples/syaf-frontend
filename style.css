@@ -48,7 +48,7 @@ nav ul li a {
   padding: 20px;
 }
 .logo img {
-  height: 60px;   /* neat size for top bar */
+  height: 120px;   /* neat size for top bar */
   width: 100px;    /* keep proportions */
 }
 
@@ -93,21 +93,6 @@ nav ul li a {
   object-fit: cover;       /* crop edges nicely */
   border-radius: 10px;
 }
-
-
-
-@media (max-width: 768px) {
-  .slides img {
-    height: 200px;   /* tablet */
-  }
-}
-
-@media (max-width: 480px) {
-  .slides img {
-    height: 150px;   /* phone */
-  }
-}
-
 
 /* Footer */
 footer {
